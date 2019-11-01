@@ -1,15 +1,3 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- powerapps
-- vs
-- azure-app-service
-- dotnet
-description: "Hands-on-Lab to demonstrate PowerApps canvas with Azure API Apps using a custom-connector"
----
-
 # PowerApps & Azure Lab
 
 <!-- 

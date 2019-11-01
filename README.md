@@ -3,12 +3,14 @@ page_type: sample
 languages:
 - csharp
 products:
+- powerapps
+- vs
+- azure-app-service
 - dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+description: "Hands-on-Lab to demonstrate PowerApps canvas with Azure API Apps using a custom-connector"
 ---
 
-# Official Microsoft Sample
+# PowerApps & Azure Lab
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -17,8 +19,7 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
-
-Give a short description for your sample here. What does it do and why is it important?
+This repository contains a source code for an API App and a lab manual for demonstrating a simple example for integrating PowerApps Canvas apps with an API app hosted on an Azure Web App using a custom-connector. This scenario can be used to unlock the potential of untapped assets within an enterprise (legacy APIs, data sources, processes etc..)
 
 ## Contents
 
@@ -26,28 +27,43 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
+| `Lab Resources`   | Lab Resources including Lab Manual.        |
+| `src`             | Source code for the API App.               |
 | `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
 
+## Lab Overview & Objective
+
+### Overview
+
+Most enterprises have a majority of their core business data trapped in several silos (legacy databases & apps - Systems of Records). It is essential for digital transformation to break those data silos and make the information trapped in those systems available to employees and business teams as needed.  
+
+It is also important to modernize the user experience of the enterprise apps in order to drive productivity.  
+
+[Microsoft PowerApps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview) along with [Azure](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide) could be an effective way to bridge this gap, by enabling an RESTful API layer powered by Azure which could encapsulate and standardize the enterprise data for use with apps + PowerApps as the rapid application development User interface where business apps can be built with agility and in collaboration with the business.
+
+### Objectives
+
+This lab has two key objectives:
+- To demonstrate how PowerApps platform can help unlock the potential of untapped assets within an Enterprise ( legacy APIs, data sources, processes) with a low-code / no code approach.  
+- Learn to create a cross-platform application user experience using Microsoft Power Apps to consume these RESTful APIs through custom connectors
+
 ## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+The lab requires: 
+- Visual Studio 2017 or 2019 to compile the code and publish to Azure
+- Access to an Azure Subscription to create an API app to serve as the RESTful API
+- Access to a PowerApps environment with Maker permission to create apps and custom connectors
 
-## Setup
+## Lab Manual
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
-
-## Runnning the sample
-
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+Refer to the Lab Document inside the [Lab Resources] folder for the step-by-step guidance for this lab.
 
 ## Key concepts
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+- [Microsoft PowerApps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview)
+- [Custom Connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
 
 ## Contributing
 

@@ -21,18 +21,6 @@ Taxonomies for products and languages: https://review.docs.microsoft.com/new-hop
 -->
 This repository contains a source code for an API App and a lab manual for demonstrating a simple example for integrating PowerApps Canvas apps with an API app hosted on an Azure Web App using a custom-connector. This scenario can be used to unlock the potential of untapped assets within an enterprise (legacy APIs, data sources, processes etc..)
 
-## Contents
-
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
-
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `Lab Resources`   | Lab Resources including Lab Manual.        |
-| `src`             | Source code for the API App.               |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
-
 ## Lab Overview & Objective
 
 ### Overview
@@ -64,6 +52,16 @@ Refer to the [Lab Document](https://github.com/microsoft/PowerApps-Azure-Lab/mas
 
 - [Microsoft PowerApps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview)
 - [Custom Connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+
+## Contents
+
+| File/folder       | Description                                |
+|-------------------|--------------------------------------------|
+| `Lab Resources`   | Lab Resources including Lab Manual.        |
+| `src`             | Source code for the API App.               |
+| `README.md`       | This README file.                          |
+| `LICENSE`         | The license for the lab.                |
+
 
 ## Contributing
 

@@ -46,7 +46,7 @@ The lab requires:
 
 ## Lab Manual
 
-Refer to the [Lab Document](https://github.com/microsoft/PowerApps-Azure-Lab/master/Lab%20Resources/Hands-on%20with%20PowerApps%20and%20Azure-Lab%20Document.pdf) for the step-by-step guidance for this lab.
+Refer to the [Lab Document](https://github.com/microsoft/PowerApps-Azure-Lab/blob/master/Lab%20Resources/Hands-on%20with%20PowerApps%20and%20Azure-Lab%20Document.pdf) for the step-by-step guidance for this lab.
 
 ## Key concepts
 

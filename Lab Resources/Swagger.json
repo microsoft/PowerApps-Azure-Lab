@@ -1,0 +1,192 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "ProductListAPI"
+  },
+  "host": "UseYourWebAppName.azurewebsites.net",
+  "schemes": [ "http" ],
+  "paths": {
+    "/products": {
+      "get": {
+        "tags": [ "Products" ],
+        "summary": "Gets the list of products",
+        "description": "This operation returns the list of products along with their current stock",
+        "operationId": "GetAllProducts",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Product" }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [ "Products" ],
+        "summary": "Creates a new product",
+        "description": "This operation creates a new product along with it's current stock",
+        "operationId": "CreateProduct",
+        "consumes": [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "product",
+            "in": "body",
+            "description": "The new product",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Product" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "$ref": "#/definitions/Product" }
+          },
+          "201": {
+            "description": "Created",
+            "schema": { "$ref": "#/definitions/Product" }
+          }
+        }
+      },
+      "delete": {
+        "tags": [ "Products" ],
+        "summary": "Deletes all products",
+        "description": "This operation deletes all the products from the inventory",
+        "operationId": "DeleteAllProducts",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "tags": [ "Products" ],
+        "summary": "Gets a specific product",
+        "description": "This operation returns the specific product based on the ID along with it's current stock",
+        "operationId": "GetProductById",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identifier for the product",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "$ref": "#/definitions/Product" }
+          },
+          "404": {
+            "description": "Product not found",
+            "schema": { "$ref": "#/definitions/Product" }
+          }
+        }
+      },
+      "delete": {
+        "tags": [ "Products" ],
+        "summary": "Deletes a product",
+        "description": "This operation deletes the product from the inventory",
+        "operationId": "DeleteProductById",
+        "consumes": [],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identifier of the product to be deleted",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "boolean" }
+          },
+          "404": {
+            "description": "Product not found",
+            "schema": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "/products/{ProductId}": {
+      "post": {
+        "tags": [ "Products" ],
+        "summary": "Update a specific product",
+        "description": "This operation updates the specific product based on the ID along with it's current stock",
+        "operationId": "UpdateProduct",
+        "consumes": [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters": [
+          {
+            "name": "product",
+            "in": "body",
+            "description": "Product to update inluding ID",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Product" }
+          },
+          {
+            "name": "ProductId",
+            "in": "path",
+            "description": "Product Id to update",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "boolean" }
+          },
+          "404": {
+            "description": "Product not found",
+            "schema": { "type": "boolean" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Product": {
+      "description": "Product",
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "int32",
+          "description": "The ID of the product.",
+          "type": "integer"
+        },
+        "Name": {
+          "description": "Product name.",
+          "type": "string"
+        },
+        "CurrentInventory": {
+          "format": "int32",
+          "description": "Current Inventory",
+          "type": "integer"
+        },
+        "Unit": {
+          "description": "The Product's unit.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# PowerApps & Azure Lab
+# Power Apps & Azure Lab
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -7,7 +7,7 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
-This repository contains a source code for an API App and a lab manual for demonstrating a simple example for integrating PowerApps Canvas apps with an API app hosted on an Azure Web App using a custom-connector. This scenario can be used to unlock the potential of untapped assets within an enterprise (legacy APIs, data sources, processes etc..)
+This repository contains a source code for an API App and a lab manual for demonstrating a simple example for integrating Power Apps Canvas apps with an API app hosted on an Azure Web App using a custom-connector. This scenario can be used to unlock the potential of untapped assets within an enterprise (legacy APIs, data sources, processes etc..)
 
 ## Lab Overview & Objective
 
@@ -17,12 +17,12 @@ Most enterprises have a majority of their core business data trapped in several 
 
 It is also important to modernize the user experience of the enterprise apps in order to drive productivity.  
 
-[Microsoft PowerApps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview) along with [Azure](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide) could be an effective way to bridge this gap, by enabling an RESTful API layer powered by Azure which could encapsulate and standardize the enterprise data for use with apps + PowerApps as the rapid application development User interface where business apps can be built with agility and in collaboration with the business.
+[Microsoft Power Apps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview) along with [Azure](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide) could be an effective way to bridge this gap, by enabling an RESTful API layer powered by Azure which could encapsulate and standardize the enterprise data for use with apps + Power Apps as the rapid application development User interface where business apps can be built with agility and in collaboration with the business.
 
 ### Objectives
 
 This lab has two key objectives:
-- To demonstrate how PowerApps platform can help unlock the potential of untapped assets within an Enterprise ( legacy APIs, data sources, processes) with a low-code / no code approach.  
+- To demonstrate how Power Apps platform can help unlock the potential of untapped assets within an Enterprise ( legacy APIs, data sources, processes) with a low-code / no code approach.  
 - Learn to create a cross-platform application user experience using Microsoft Power Apps to consume these RESTful APIs through custom connectors
 
 ## Prerequisites
@@ -30,7 +30,7 @@ This lab has two key objectives:
 The lab requires: 
 - Visual Studio 2017 or 2019 to compile the code and publish to Azure
 - Access to an Azure Subscription to create an API app to serve as the RESTful API
-- Access to a PowerApps environment with Maker permission to create apps and custom connectors
+- Access to a Power Apps environment with Maker permission to create apps and custom connectors
 
 ## Lab Manual
 
@@ -38,7 +38,7 @@ Refer to the [Lab Document](https://github.com/microsoft/PowerApps-Azure-Lab/blo
 
 ## Key concepts
 
-- [Microsoft PowerApps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview)
+- [Microsoft Power Apps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview)
 - [Custom Connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
 
 ## Contents

@@ -24,6 +24,7 @@ It is also important to modernize the user experience of the enterprise apps in 
 This lab has two key objectives:
 - To demonstrate how Power Apps platform can help unlock the potential of untapped assets within an Enterprise ( legacy APIs, data sources, processes) with a low-code / no code approach.  
 - Learn to create a cross-platform application user experience using Microsoft Power Apps to consume these RESTful APIs through custom connectors
+- `[Optional/Bonus Lab]` Learn how to enable Application Lifecycle Management (ALM) and setup Azure DevOps for the application  
 
 ## Prerequisites
 
@@ -40,6 +41,7 @@ Refer to the [Lab Document](https://github.com/microsoft/PowerApps-Azure-Lab/blo
 
 - [Microsoft Power Apps](https://docs.microsoft.com/en-us/powerapps/powerapps-overview)
 - [Custom Connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+- [ALM for Power Apps](https://docs.microsoft.com/en-us/power-platform/admin/automate-alm)
 
 ## Contents
 
